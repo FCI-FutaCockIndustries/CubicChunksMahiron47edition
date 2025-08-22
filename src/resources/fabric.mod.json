@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cubicchunks",
+	"version": "${version}",
+	"name": "Cubic Chunks Mahiron47 edition",
+	"description": "Cubic Chunks minecraft mod port from 1.12.2 forge to 1.20.1 fabric with cuted compability for vanila generation.",
+	"authors": [
+		"Mahiron47"
+	],
+	"contact": {
+		"homepage": "https://github.com/FCI-FutaCockIndustries/NTBelowHorizons",
+		"sources": "https://github.com/FCI-FutaCockIndustries/CubicChunksMahiron47edition"
+	},
+	"license": "MIT",
+	"icon": "assets/cubicchunks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.mahiron47.cubicchunks.CubicChunksClient"
+		],
+		"main": [
+			"net.mahiron47.cubicchunks.CubicChunks"
+		],
+		"fabric-datagen": [
+			"net.mahiron47.cubicchunks.CubicChunksDataGenerator"
+		]
+	},
+	"mixins": [
+		"cubicchunks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
